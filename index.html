@@ -7,10 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" href="assets/img/viajes.svg">
     <title>Viajes Chile</title>
-    <!-- Google Fonts - Open Sans -->
+    <!-- Google Fonts - Cabin -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cabin:wght@400;700&display=swap" rel="stylesheet">
     <!-- Font Awesome CDN -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
         integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
@@ -25,27 +25,27 @@
 
     <!-- Barra de Navegación -->
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#"><img class="logo-navbar" src="assets/img/viajes.svg" alt=""> VIAJES
-                CHILE</a>
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-custom">
+        <div class="container-fluid centrado-nav">
+            <a class="navbar-brand" href="#index.html"><img class="logo-navbar" src="assets/img/viajes.svg" alt=""><span
+                    class="navbar-font ms-2">Viajes Chile</span> </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="#">Inicio</a>
+                        <a class="nav-link" aria-current="page" href="#inicio"><span class="navbar-font">Inicio</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Quienes Somos</a>
+                        <a class="nav-link" href="#quienes-somos"><span class="navbar-font">Quienes Somos</span> </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Destacados</a>
+                        <a class="nav-link" href="#lugares-destacados"><span class="navbar-font">Destacados</span> </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Contacto</a>
+                        <a class="nav-link" href="#contacto"><span class="navbar-font">Contacto</span> </a>
                     </li>
                 </ul>
             </div>
@@ -53,126 +53,171 @@
     </nav>
 
     <!-- Carrusel Encabezado   -->
-
-    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img src="assets/img/carousel1.jpg" class="d-block w-100" alt="...">
+    <section id="inicio">
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="assets/img/carousel1.jpg" class="d-block w-100 custom-carousel-img" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="assets/img/carousel2.jpg" class="d-block w-100 custom-carousel-img" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="assets/img/carousel3.jpg" class="d-block w-100 custom-carousel-img" alt="...">
+                </div>
             </div>
-            <div class="carousel-item">
-                <img src="assets/img/carousel2.jpg" class="d-block w-100" alt="...">
-            </div>
-            <div class="carousel-item">
-                <img src="assets/img/carousel3.jpg" class="d-block w-100" alt="...">
-            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
-            data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
-            data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-        </button>
+    </section>
+
+    <div id="centrado-principal">
+        <!-- Quienes Somos -->
+
+        <section class="quienes-somos d-none d-md-block" id="quienes-somos">
+            <h3 class="subtitulo">¿Quiénes somos?</h3>
+            <hr>
+
+            <div class="row">
+                <div class="col">
+                    <i class="fas fa-plane custom-font py-2"></i>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur iusto ducimus illum?
+                        Repellendus
+                        labore sit ea corrupti iure. Eaque ullam libero ex placeat facilis laboriosam est
+                        necessitatibus,
+                        ipsum iure repudiandae saepe atque natus quo. Molestias voluptas illo consequatur odio nemo?
+                        Lorem
+                        ipsum dolor sit amet, consectetur adipisicing elit. Facilis labore deleniti dolorem iusto
+                        laudantium Lorem ipsum dolor sit amet consectetur..</p>
+                </div>
+                <div class="col">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur iusto ducimus illum?
+                        Repellendus
+                        labore sit ea corrupti iure. Eaque ullam libero ex placeat facilis laboriosam est
+                        necessitatibus,
+                        ipsum iure repudiandae saepe atque natus quo. Molestias voluptas illo consequatur odio nemo?
+                        Lorem
+                        ipsum dolor sit amet consectetur adipisicing elit. Officiis ipsa nihil illo? Aut consequuntur
+                        vitae
+                        eligendi ab, delectus suscipit ad!</p>
+                    <i class="fas fa-mountain custom-font py-2"></i>
+                </div>
+                <div class="col">
+                    <i class="fas fa-route custom-font py-2"></i>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur iusto ducimus illum?
+                        Repellendus
+                        labore sit ea corrupti iure. Eaque ullam libero ex placeat facilis laboriosam est
+                        necessitatibus,
+                        ipsum iure repudiandae saepe atque natus quo. Molestias voluptas illo consequatur odio nemo?
+                        Lorem
+                        ipsum dolor sit amet consectetur adipisicing elit. Accusamus excepturi nulla minus consectetur
+                        commodi architecto alias sequi ipsa provident incidunt.</p>
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- Lugares destacados -->
+
+        <section class="destacados" id="lugares-destacados">
+            <h3 class="subtitulo">Destacados</h3>
+            <hr>
+
+            <div class="container row centrado">
+                <div class="col-sm-12 col-lg-3">
+                    <div class="card card-custom my-3">
+                        <img src="assets/img/card1.jpg" class="card-img-top image-customize" alt="...">
+                        <div class="card-body card-color">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of
+                                the
+                                card's content.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-12 col-lg-3">
+                    <div class="card card-custom my-3">
+                        <img src="assets/img/card2.jpg" class="card-img-top image-customize" alt="...">
+                        <div class="card-body card-color">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of
+                                the
+                                card's content.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-12 col-lg-3">
+                    <div class="card card-custom my-3">
+                        <img src="assets/img/card3.jpg" class="card-img-top image-customize" alt="...">
+                        <div class="card-body card-color">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of
+                                the
+                                card's content.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-12 col-lg-3">
+                    <div class="card card-custom my-3">
+                        <img src="assets/img/card4.jpg" class="card-img-top image-customize" alt="...">
+                        <div class="card-body card-color">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of
+                                the
+                                card's content.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contacto Typeform -->
+
+        <section class="contacto" id="contacto">
+            <h3 class="subtitulo">Contacto</h3>
+            <hr>
+            <!-- <div data-tf-widget="vWZWpg2f" style="width:100%;height:400px;"></div>
+        <script src="//embed.typeform.com/next/embed.js"></script> -->
+        </section>
+
     </div>
-
-
-
-    <!-- Quienes Somos -->
-
-    <section class="quienes-somos">
-        <h3 class="subtitulo">¿Quiénes somos?</h3>
-        <hr>
-
-        <div class="row">
-            <div class="col">
-                <i class="fas fa-plane custom-font"></i>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur iusto ducimus illum? Repellendus
-                    labore sit ea corrupti iure. Eaque ullam libero ex placeat facilis laboriosam est necessitatibus,
-                    ipsum iure repudiandae saepe atque natus quo. Molestias voluptas illo consequatur odio nemo? Lorem
-                    ipsum dolor sit amet, consectetur adipisicing elit. Facilis labore deleniti dolorem iusto
-                    laudantium Lorem ipsum dolor sit amet consectetur..</p>
-            </div>
-            <div class="col">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur iusto ducimus illum? Repellendus
-                    labore sit ea corrupti iure. Eaque ullam libero ex placeat facilis laboriosam est necessitatibus,
-                    ipsum iure repudiandae saepe atque natus quo. Molestias voluptas illo consequatur odio nemo? Lorem
-                    ipsum dolor sit amet consectetur adipisicing elit. Officiis ipsa nihil illo? Aut consequuntur vitae
-                    eligendi ab, delectus suscipit ad!</p>
-                <i class="fas fa-mountain custom-font"></i>
-            </div>
-            <div class="col">
-                <i class="fas fa-route custom-font"></i>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur iusto ducimus illum? Repellendus
-                    labore sit ea corrupti iure. Eaque ullam libero ex placeat facilis laboriosam est necessitatibus,
-                    ipsum iure repudiandae saepe atque natus quo. Molestias voluptas illo consequatur odio nemo? Lorem
-                    ipsum dolor sit amet consectetur adipisicing elit. Accusamus excepturi nulla minus consectetur
-                    commodi architecto alias sequi ipsa provident incidunt.</p>
-            </div>
-
-        </div>
-    </section>
-
-
-    <!-- Lugares destacados -->
-
-    <section class="destacados">
-        <h3 class="subtitulo">Destacados</h3>
-        <hr>
-
-        <div class="container row centrado">
-            <div class="card col-sm-12 col-lg-3">
-                <img src="assets/img/card1.jpg" class="card-img-top" alt="...">
-                <div class="card-body card-color">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                        card's content.</p>
-                </div>
-            </div>
-
-            <div class="card col-sm-12 col-lg-3">
-                <img src="assets/img/card2.jpg" class="card-img-top" alt="...">
-                <div class="card-body card-color">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                        card's content.</p>
-                </div>
-            </div>
-
-            <div class="card col-sm-12 col-lg-3">
-                <img src="assets/img/card3.jpg" class="card-img-top" alt="...">
-                <div class="card-body card-color">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                        card's content.</p>
-                </div>
-            </div>
-
-            <div class="card col-sm-12 col-lg-3">
-                <img src="assets/img/card4.jpg" class="card-img-top" alt="...">
-                <div class="card-body card-color">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                        card's content.</p>
-                </div>
+    <!-- Footer para Móvil -->
+    <footer class="py-2 d-md-none ">
+        <div class="container centrado-footer">
+            <div class="mobile-footer-elements justify-content-center">
+                <i class="fab fa-github-square fa-4x"><span class="footer-element mx-1"></span></i>
+                <i class="fab fa-linkedin fa-4x"><span class="footer-element mx-1"></span></i>
+                <i class="fab fa-twitter-square fa-4x"><span class="footer-element mx-1"></span></i>
+                <i class="fab fa-facebook-square fa-4x"><span class="footer-element mx-1"></span></i>
             </div>
         </div>
-    </section>
+    </footer>
 
-    <section class="contacto">
-        <h3 class="subtitulo">Contacto</h3>
-        <hr>
-        <div data-tf-widget="vWZWpg2f" style="width:100%;height:400px;"></div><script src="//embed.typeform.com/next/embed.js"></script>
-    </section>
-
-    <footer>
-        <p>VIAJES CHILE</p>
-        <i class="fab fa-github-square"></i>
-        <i class="fab fa-linkedin"></i>
-        <i class="fab fa-twitter-square"></i>
-        <i class="fab fa-facebook-square"></i>
+    <!-- Footer para Ecritorio lg -->
+    <footer class="py-2 d-none d-md-block ">
+        <div class="container centrado-footer">
+            <p class="footer-element logo-footer-lg">VIAJES CHILE</p>
+            <a href="http://www.github.com" target="_blank"><i class="fab fa-github-square fa-2x"><span class="footer-element mx-1"></span></i></a>
+            <a href="http://www.facebook.com" target="_blank"><i class="fab fa-facebook-square fa-2x"><span class="footer-element mx-1"></span></i></a>
+            <a href="http://www.linkedin.com" target="_blank"><i class="fab fa-linkedin fa-2x"><span class="footer-element mx-1"></span></i></a>
+            <a href="http://www.twitter.com" target="_blank"><i class="fab fa-twitter-square fa-2x"><span class="footer-element mx-1"></span></i></a>
+        </div>
     </footer>
 
 
