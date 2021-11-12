@@ -11,6 +11,7 @@ body * {
 body{
     background-color: #000000;
     color: #ffffff;
+    font-family: 'Open Sans', sans-serif;
 }
 
 footer{
@@ -23,6 +24,10 @@ hr{
 
 .card-color{
     background-color: var(--turquesa);
+}
+
+.centrado{
+    margin: 0 auto;
 }
 
 .custom-font{
