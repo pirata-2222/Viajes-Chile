@@ -49,8 +49,10 @@ p{
 .card-custom{
     border: 0;
     padding: 0;
-    
-    
+}
+
+.carousel-position{
+    top: 3.5rem;
 }
 
 .centrado{
@@ -116,9 +118,14 @@ p{
     color: #ffffff;
 }
 
+.posicion-bloques{
+    margin-top: 2rem;
+}
+
 .subtitulo{
     font-size: 2rem;
     font-weight: 400;
-    margin-top: 3rem;
+    margin-top: 6rem;
     text-align: center;
 }
+
