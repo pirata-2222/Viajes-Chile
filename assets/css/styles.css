@@ -1,6 +1,10 @@
+/* Variables */
+
 :root{
     --turquesa: #17a3b8;
 }
+
+/* Selectores de Etiquetas */
 
 body * {
     margin: 0;
@@ -33,13 +37,10 @@ p{
     font-weight: 400;
 }
 
+/* Selectores de Clase */
 
 .bg-custom{
     background-color: var(--turquesa)
-}
-
-.image-customize{
-    height: 12.25rem;
 }
 
 .card-color{
@@ -70,12 +71,6 @@ p{
 
 }
 
-#centrado-principal{
-    margin: 0 auto;
-    width: 87.5%;
-
-}
-
 .custom-carousel-img{
     height: 65%;
 }
@@ -90,6 +85,10 @@ p{
     display: inline-block;
 }
 
+
+.image-customize{
+    height: 12.25rem;
+}
 
 .logo-footer{
     font-size: 2rem;
@@ -118,6 +117,10 @@ p{
     color: #ffffff;
 }
 
+.popover-title{
+    background: red;
+}
+
 .posicion-bloque{
     margin-top: 2rem;
 }
@@ -129,3 +132,10 @@ p{
     text-align: center;
 }
 
+/* Selectores de ID */
+
+#centrado-principal{
+    margin: 0 auto;
+    width: 87.5%;
+
+}
